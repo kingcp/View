@@ -1,0 +1,5 @@
+MeasureSpec类：是一个32位的int值，其中高2位为测量的模式，低2位为测量值
+模式：EXACTLY,AT_MOST,UNSPECIFIED
+自定义View如果不重写OnMeasure，默认只支持EXACTLY模式
+LinearGradient的使用？
+自定义View方式：1.对现有控件进行拓展。 2.创建复合控件。 3.重写View来实现新的控件
