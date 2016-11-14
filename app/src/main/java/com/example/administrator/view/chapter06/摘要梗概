@@ -1,0 +1,2 @@
+1.获得图片中的像素点信息
+bitmap.getPixels(oldPix,0,bitmap.getWidth,0,0,width,height);

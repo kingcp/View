@@ -11,10 +11,12 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".chapter06.ColorMatrixActivity"></activity>
+        <activity android:name=".chapter06.ColorMatrixTwoActivity"></activity>
+        <activity android:name=".chapter06.MatrixOneActivity"></activity>
     </application>
 
 </manifest>

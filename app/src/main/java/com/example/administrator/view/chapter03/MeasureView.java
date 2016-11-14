@@ -64,6 +64,7 @@ public class MeasureView extends TextView {
     protected void onDraw(Canvas canvas) {
         canvas.drawRect(0,0,getMeasuredWidth(),getMeasuredHeight(),mPaint1);
         canvas.drawRect(10,10,getMeasuredWidth()-10,getMeasuredHeight()-10,mPaint2);
+        canvas.save();
         super.onDraw(canvas);
 
     }

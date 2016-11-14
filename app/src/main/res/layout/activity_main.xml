@@ -11,10 +11,37 @@
     tools:context="com.example.administrator.view.MainActivity">
 
     <com.example.administrator.view.chapter03.MeasureView
+        android:id="@+id/measure_view"
         android:layout_width="200dp"
         android:layout_height="100dp"
         android:gravity="center"
         android:textSize="30sp"
         android:text="Hello World!" />
+
+    <com.example.administrator.view.chapter06.LayerView
+        android:layout_below="@id/measure_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        />
+    <Button
+        android:layout_below="@id/measure_view"
+        android:id="@+id/color_matrix_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Color Matrix One"/>
+
+    <Button
+        android:layout_below="@id/color_matrix_btn"
+        android:id="@+id/color_matrix_two_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Color Matrix Two"/>
+
+    <Button
+        android:layout_below="@id/color_matrix_two_btn"
+        android:id="@+id/matrix_one_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Matrix One"/>
 
 </RelativeLayout>
