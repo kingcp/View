@@ -17,6 +17,9 @@
         <activity android:name=".chapter06.ColorMatrixActivity"></activity>
         <activity android:name=".chapter06.ColorMatrixTwoActivity"></activity>
         <activity android:name=".chapter06.MatrixOneActivity"></activity>
+        <activity android:name=".chapter06.BitmapMeshActivity"></activity>
+        <activity android:name=".chapter06.PorterDuffXfermodeActivity"></activity>
+        <activity android:name=".chapter06.BitmapShaderActivity"></activity>
     </application>
 
 </manifest>

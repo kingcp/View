@@ -43,5 +43,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Matrix One"/>
+    <Button
+        android:layout_below="@id/matrix_one_btn"
+        android:id="@+id/bitmap_mesh_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bitmap Mesh"/>
+    <Button
+        android:layout_below="@id/bitmap_mesh_btn"
+        android:id="@+id/PosterDuffXfermode_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PosterDuffXfermode"/>
+    <Button
+        android:layout_below="@id/PosterDuffXfermode_btn"
+        android:id="@+id/Share_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share_btn"/>
 
 </RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <com.example.administrator.view.chapter06.PorterDuffXfermodeView01
+        android:layout_margin="10dp"
+        android:layout_width="300dp"
+        android:layout_height="200dp" />
+    <com.example.administrator.view.chapter06.PorterDuffXfermodeWavingView
+        android:id="@+id/waving_view"
+        android:layout_width="241dp"
+        android:layout_height="180dp"
+        android:layout_marginLeft="10dp" />
+
+</LinearLayout>

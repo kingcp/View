@@ -1,2 +1,6 @@
 1.获得图片中的像素点信息
 bitmap.getPixels(oldPix,0,bitmap.getWidth,0,0,width,height);
+
+Shader
+LinearGradient(0,0,400,400,Color.BLUE,Color.YELLOW,Shader.TileMode.REPEAT);//从(0,0)->(400,400)颜色从蓝色到黄色渐变，以重复的方式
+PathEffect
