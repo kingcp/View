@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_margin="10dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/color_matrix"
+        android:scaleType="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/image_view" />
+    <Button
+        android:id="@+id/close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="close"/>
+    <Button
+        android:id="@+id/rotate_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="3D Rotate"/>
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff0000">
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_hidden"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffff00"
+        android:visibility="gone">
+    </LinearLayout>
+
+</LinearLayout>

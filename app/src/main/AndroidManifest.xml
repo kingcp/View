@@ -20,6 +20,8 @@
         <activity android:name=".chapter06.BitmapMeshActivity"></activity>
         <activity android:name=".chapter06.PorterDuffXfermodeActivity"></activity>
         <activity android:name=".chapter06.BitmapShaderActivity"></activity>
+        <activity android:name=".chapter06.SurfaceViewActivity"></activity>
+        <activity android:name=".chapter07_Animation.AnimationActivity"></activity>
     </application>
 
 </manifest>

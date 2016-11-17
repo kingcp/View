@@ -15,6 +15,8 @@ import com.example.administrator.view.chapter06.ColorMatrixActivity;
 import com.example.administrator.view.chapter06.ColorMatrixTwoActivity;
 import com.example.administrator.view.chapter06.MatrixOneActivity;
 import com.example.administrator.view.chapter06.PorterDuffXfermodeActivity;
+import com.example.administrator.view.chapter06.SurfaceViewActivity;
+import com.example.administrator.view.chapter07_Animation.AnimationActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -24,6 +26,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button bitmap_mesh_btn;
     private Button PosterDuffXfermode_btn;
     private Button Share_btn;
+    private Button surface_view_btn;
+    private Button animation_btn;
     private boolean flag = false;
     private static final String TAG = "MainActivity";
     private Handler handler = new Handler(){
@@ -52,6 +56,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         PosterDuffXfermode_btn.setOnClickListener(this);
         Share_btn = (Button) findViewById(R.id.Share_btn);
         Share_btn.setOnClickListener(this);
+        surface_view_btn = (Button) findViewById(R.id.surface_view_btn);
+        surface_view_btn.setOnClickListener(this);
+        animation_btn = (Button) findViewById(R.id.animation_btn);
+        animation_btn.setOnClickListener(this);
         if(flag){
             Log.d(TAG, "onCreate: ");
             System.out.println(TAG + " flag = true");
@@ -88,6 +96,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.Share_btn:
                 Intent intent6 = new Intent(MainActivity.this, BitmapShaderActivity.class);
                 startActivity(intent6);
+                break;
+            case R.id.surface_view_btn:
+                Intent intent7 = new Intent(MainActivity.this, SurfaceViewActivity.class);
+                startActivity(intent7);
+                break;
+            case R.id.animation_btn:
+                Intent intent8 = new Intent(MainActivity.this, AnimationActivity.class);
+                startActivity(intent8);
                 break;
         }
     }

@@ -1,0 +1,11 @@
+视图动画：通过view是矩阵变化，实现动画
+AlphaAnimation，RotateAnimation，TranslateAnimation，ScaleAnimation，AnimationSet，animation.serAnimationListener(),view.startAnimation
+属性动画：可以交互
+ObjectAnimator
+translationX,translationY,rotation,rotationX,rotationY,scaleX,scaleY,pivotX,pivotY,x,y,alpha
+PropertyValuesHolder/AnimatorSet
+ValueAnimator
+ObjectAnimator.addListener(AnimatorListener listener/AnimatorListenerAdapter 只重写必要的方法);
+View.animate().alpha().setDuration().withStartAction()
+Android 布局动画
+LayoutAnimationController

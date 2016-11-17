@@ -61,5 +61,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Share_btn"/>
+    <Button
+        android:layout_below="@id/Share_btn"
+        android:id="@+id/surface_view_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="surface view btn"/>
+    <Button
+        android:layout_below="@id/surface_view_btn"
+        android:id="@+id/animation_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animation "/>
 
 </RelativeLayout>
