@@ -73,5 +73,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Animation "/>
+    <Button
+        android:layout_below="@id/surface_view_btn"
+        android:layout_toRightOf="@id/animation_btn"
+        android:id="@+id/view_drag_helper_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ViewDragHelper "/>
 
 </RelativeLayout>

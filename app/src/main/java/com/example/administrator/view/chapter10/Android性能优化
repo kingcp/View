@@ -1,0 +1,19 @@
+布局优化：
+1.在16ms中完成绘画，才能保证每秒60帧画面，保证看起来不卡顿
+调试UI渲染工具，手机打开(开发者选项->GPU呈现模式分析->在屏幕上显示为条形图)
+绿色横线为VSYNC时间16ms，最好保证所有都在16ms以下，柱状图：蓝色：测量绘制DisplayList的时间，红色：OpenGL渲染DisplayList所需时间，黄色：CPU等待GPU处理时间
+2.避免overDraw
+可以通过工具来调试（开发者选项->调试GPU过度重绘->显示过度绘制区域） 尽量增加蓝色区域，减少红色区域
+3.优化布局层级，减少View树高度
+复用共通的布局<include>
+<ViewStub>实现引用和延迟加载
+4.使用hierarchyview工具
+内存优化：
+Bitmap优化
+代码优化:使用lint工具：Analyze->Inspect code
+5.使用TraceView工具优化App性能
+Tools->Android->Android Device Monitor->start method profiling->sample base profiling->start method profiling
+生成图像进行分析：Incl CPU Time 时间长，Calls + RecurCalls次数少就有可能有问题
+6.使用MAT工具分析App内存状态
+Tools->Android->Android Device Monitor->Update Heap->不停的点击Cause GC
+查看data Object一栏中的Total Size存在明显变化就有可能内存泄露

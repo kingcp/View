@@ -2,6 +2,7 @@ package com.example.administrator.view;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Debug;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.administrator.view.chapter05_scroll.DrawerActivity;
 import com.example.administrator.view.chapter06.BitmapMeshActivity;
 import com.example.administrator.view.chapter06.BitmapShaderActivity;
 import com.example.administrator.view.chapter06.ColorMatrixActivity;
@@ -28,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button Share_btn;
     private Button surface_view_btn;
     private Button animation_btn;
+    private Button view_drag_helper_btn;
     private boolean flag = false;
     private static final String TAG = "MainActivity";
     private Handler handler = new Handler(){
@@ -44,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+//        Debug.startMethodTracing("bug");
         color_matrix_btn = (Button) findViewById(R.id.color_matrix_btn);
         color_matrix_btn.setOnClickListener(this);
         color_matrix_two_btn = (Button) findViewById(R.id.color_matrix_two_btn);
@@ -60,6 +64,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         surface_view_btn.setOnClickListener(this);
         animation_btn = (Button) findViewById(R.id.animation_btn);
         animation_btn.setOnClickListener(this);
+        view_drag_helper_btn = (Button) findViewById(R.id.view_drag_helper_btn);
+        view_drag_helper_btn.setOnClickListener(this);
         if(flag){
             Log.d(TAG, "onCreate: ");
             System.out.println(TAG + " flag = true");
@@ -105,6 +111,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent8 = new Intent(MainActivity.this, AnimationActivity.class);
                 startActivity(intent8);
                 break;
+            case R.id.view_drag_helper_btn:
+                Intent intent9 = new Intent(MainActivity.this, DrawerActivity.class);
+                startActivity(intent9);
+                break;
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+//        Debug.stopMethodTracing();
     }
 }
